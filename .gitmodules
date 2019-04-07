@@ -1,0 +1,3 @@
+[submodule "yastlibs"]
+	path = yastlibs
+	url = https://github.com/yastdotcom/yastlibs.git
