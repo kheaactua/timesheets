@@ -9,13 +9,21 @@ First, prepare a `secret.json` file that contains your Yast login credentials in
 ```json
 {
 	"login": "myemail@myemail.com",
+	"email": "myemail@myemail.com",
+	"User": "My Name",
 	"password", "password"
 }
 ```
 
 Then, run the python script:
 ```sh
-python3 download_records.py
+echo "Output results in a JSON format"
+python3 download_records.py --json && cat yast.json
+
+echo "Ouput results in a format that can be imported to Toggl"
+python3 download_records.py --json && cat yast.json
 ```
 
-All your available records will be output in JSON format.
+# Disclaimer
+
+This project was written as quickly as I could, it is not an example of good code by any means. :)
